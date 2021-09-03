@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display';
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url('./images//pattern-background-mobile.svg');
+  background-color: hsl(225, 100%, 94%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+}
+
+body h1 {
+  color: hsl(223, 47%, 23%);
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+main {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 400px;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.order-summary-container {
+  padding: 2em;
+  text-align: center;
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.plan-title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-cta {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.plan-cta:hover {
+  color: #756bf1;
+  text-decoration: none;
+}
+
+.cta {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding: 0.625em 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 8px 18px rgba(56, 41, 224, 0.3);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.cta:hover {
+  background-color: #756bf1;
+}
+
+.cancel-order {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+
+.cancel-order:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 415px) {
+  body {
+    background-image: url('./images/pattern-background-desktop.svg');
+  }
+}
